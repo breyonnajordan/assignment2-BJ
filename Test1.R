@@ -7,3 +7,7 @@ freq(penguins$species)
 ggplot(data=penguins)+
   geom_line(aes(x=bill_length_mm, y=bill_depth_mm))+
   geom_smooth(aes(x=bill_length_mm, y=bill_depth_mm))
+
+ggplot(data=penguins)+
+  geom_boxplot(aes(x=species, y=bill_depth_mm))
+ 
