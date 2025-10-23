@@ -10,3 +10,11 @@ I added anovas to test the relationship between bill length and species and bill
 
 create a model using the aov function where bill length/depth is the response and species is the explanatory and run a summary of your model.
 
+##To collaborate with Bre
+I created a separate branch where I completed my work
+
+Added my code to her R script to provide summary statistics by species
+
+Edited this README
+
+Uploaded everything to be approved by Bre in Github
