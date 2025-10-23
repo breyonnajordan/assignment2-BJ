@@ -16,3 +16,17 @@ summary(model)
  
 model2<- aov(bill_length_mm~species, data=penguins)
 summary(model2)
+
+
+
+
+####JACK M CODE####
+
+summary_species <- penguin %>%
+  group_by(species) %>%
+  summarise(
+    mean_bill_length_mm = mean(bill_length_mm, na.rm = TRUE),
+    mean_bill_depth_mm = mean(bill_depth_mm, na.rm = TRUE),
+    mean_flipper_length_mm = mean(flipper_length_mm, na.rm = TRUE),
+    mean_body_mass_g = mean(body_mass_g, na.rm = TRUE)
+  )
