@@ -10,4 +10,7 @@ ggplot(data=penguins)+
 
 ggplot(data=penguins)+
   geom_boxplot(aes(x=species, y=bill_depth_mm))
+
+model<- aov(bill_depth_mm~species, data=penguins)
+summary(model)
  
