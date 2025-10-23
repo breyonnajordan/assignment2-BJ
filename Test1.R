@@ -14,5 +14,5 @@ ggplot(data=penguins)+
 model<- aov(bill_depth_mm~species, data=penguins)
 summary(model)
  
-model<- aov(bill_length_mm~species, data=penguins)
-summary(model)
+model2<- aov(bill_length_mm~species, data=penguins)
+summary(model2)
