@@ -1,8 +1,9 @@
-#test1
+penguins <- read.csv("/Volumes/courses/QAC/qac380/TEAMS/Team 3/penguins.csv")
 
-#test2
+library(descr)
+library(ggplot2)
+freq(penguins$species)
 
-#test4
-
-#test3
-
+ggplot(data=penguins)+
+  geom_line(aes(x=bill_length_mm, y=bill_depth_mm))+
+  geom_smooth(aes(x=bill_length_mm, y=bill_depth_mm))
